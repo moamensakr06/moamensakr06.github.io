@@ -119,9 +119,57 @@ hr {
     font-size: 18px;
     line-height: 1.8;
 }
+/* =========================================
+   Education Section
+   ========================================= */
+#education {
+    padding: 80px 20px;
+    text-align: center;
+}
+#education h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+.edu-container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.edu-card {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+.edu-card h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.edu-card .school {
+    color: #e5494d;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.edu-card .date {
+    color: #a8adb4;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.edu-card .desc {
+    color: #eaf0f3;
+    font-size: 16px;
+}
+.edu-card .desc strong {
+    color: #e5494d; 
+}
 #skills {
     padding: 80px 20px;
     text-align: center;
+    background-color: #101928;
 }
 #skills h2 {
     font-size: 36px;
@@ -136,23 +184,92 @@ hr {
     max-width: 900px;
     margin: 0 auto;
 }
-.skill-card{
-    background-color:#101928;
+.skill-card {
+    background-color: #0c1219; 
     color: #eaf0f3;
-    padding: 15px 25px ;
+    padding: 15px 25px;
     border-radius: 8px; 
     font-size: 18px;
     font-weight: bold;
     border: 1px solid #1e293b;
     transition: 0.3s;
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
 }
 .skill-card:hover {
     border-color: #e5494d; 
     color: #e5494d; 
     transform: translateY(-5px); 
 }
+.skill-card img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain; 
+}
+/* =========================================
+   Services Section
+   ========================================= */
+#services {
+    padding: 80px 20px;
+    text-align: center;
+}
+#services h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.service-card {
+    background-color: #101928; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 340px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.service-card:hover {
+    border-color: #e5494d;
+    transform: translateY(-10px);
+}
+.service-card h3 {
+    color: #e5494d;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.service-card p {
+    color: #a8adb4;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.service-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; 
+    width: 100%;
+    padding-top: 20px;
+}
+
+.srv-btn {
+    flex: 1; 
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 14px;
+}
 #projects {
     padding: 80px 20px ;
+    background-color: #101928;
     
 
 }
@@ -171,7 +288,7 @@ hr {
     margin: 0 auto ;
 }
 .project-card {
-    background-color: #101928;
+    background-color: #0c1219;
     padding: 20px;
     border-radius: 10px;
     width: 320PX ; 
@@ -208,10 +325,147 @@ hr {
 .project-card .btn {
     margin-top: auto;
 }
+/* =========================================
+   Achievements Section
+   ========================================= */
+#achievements {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #0c1219; 
+}
+#achievements h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+.achievements-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.ach-item {
+    background-color: #101928; 
+    color: #eaf0f3;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none; 
+}
+.ach-item:hover {
+    border-color: #e5494d;
+    color: #e5494d;
+    transform: translateY(-4px);
+}
+.folder-btn-container {
+    margin-top: 40px; 
+    text-align: center;
+}
+.folder-btn {
+    background-color: #e5494d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #e5494d;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.folder-btn:hover {
+   background-color: transparent;
+    color: #e5494d;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(229, 73, 77, 0.4);
+}
+/* =========================================
+   Testimonials Section (Horizontal Scroll)
+   ========================================= */
+#testimonials {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #101928; 
+}
+#testimonials h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+.testi-scroll-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 20px; 
+    padding-top: 15px;
+    padding-left: 5px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.testi-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+.testi-scroll-container::-webkit-scrollbar-track {
+    background: #1e293b; 
+    border-radius: 10px;
+}
+.testi-scroll-container::-webkit-scrollbar-thumb {
+    background: #e5494d; 
+    border-radius: 10px;
+}
+.testi-card {
+    background-color: #0c1219; 
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 320px; 
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+    text-align: right;  
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start; 
+}
+.testi-card:hover {
+    border-color: #e5494d;
+    transform: translateY(-5px);
+}
+.quote-icon {
+    color: #e5494d;
+    font-size: 45px;
+    line-height: 0.8;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    text-align: right;
+}
+.review-text {
+    color: #eaf0f3;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+.client-name {
+    color: white;
+    font-size: 18px;
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+.client-title {
+    color: #e5494d;
+    font-size: 14px;
+}
 #contact {
     padding: 80px 20px;
     text-align: center;
-    background-color: #101928;
+    background-color: #0c1219;
 }
 #contact h2 {
     font-size: 36px;
@@ -229,25 +483,118 @@ hr {
 .contact-item {
     text-decoration: none;
     color: #eaf0f3;
-    background-color: #0c1219; 
+    background-color: #101928; 
     padding: 15px 30px;
     border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
     border: 1px solid #1e293b;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
 .contact-item:hover {
     background-color: #e5494d; 
     color: white;
     border-color: #e5494d;
     transform: translateY(-5px); 
+    box-shadow: 0px 5px 15px rgba(229, 73, 77, 0.3); 
+}
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.contact-item:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 footer {
     text-align: center;
     padding: 25px 20px;
-    background-color: #0c1219;
+    background-color: #101928; 
     color: #a8adb4;
     font-size: 15px;
     border-top: 1px solid #1e293b; 
+}
+footer p {
+    margin: 5px 0;  
+}
+footer strong {
+    color: #e5494d; 
+}
+.thanks-msg {
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+/* =========================================
+   Mobile Responsiveness 
+   ========================================= */
+@media (max-width: 768px) {
+    
+    nav {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    
+    #home {
+        flex-direction: column-reverse !important; 
+        text-align: center;
+        padding: 40px 15px;
+        gap: 30px;
+    }
+    
+    #home img {
+        width: 70%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    
+    #about, #education, #skills, #services, #projects, #achievements, #testimonials, #contact {
+        padding: 50px 15px;
+    }
+
+    .service-card, .project-card, .testi-card {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    
+    .contact-item, .ach-item {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .contact-links, .achievements-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    #home h1 {
+        font-size: 36px;
+    }
 }
