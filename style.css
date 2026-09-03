@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 90px; 
+}
 body {
     background-color: #0c1219; 
     color: #eaf0f3; 
@@ -17,7 +21,10 @@ nav {
     background-color: #101928;
     color:#e5494d;
     font-size: 26px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 nav ul {
     list-style: none;
@@ -427,13 +434,19 @@ hr {
     background-color: #0c1219; 
     padding: 30px;
     border-radius: 10px;
-    min-width: 320px; 
+    min-width: 400px; 
     border: 1px solid #1e293b;
     transition: 0.3s;
     text-align: right;  
     display: flex;
     flex-direction: column;
     scroll-snap-align: start; 
+}
+.en-card {
+    text-align: left !important;
+}
+.en-card .quote-icon {
+    text-align: left !important;
 }
 .testi-card:hover {
     border-color: #e5494d;
@@ -453,6 +466,22 @@ hr {
     line-height: 1.8;
     margin-bottom: 25px;
     flex-grow: 1;
+    max-height: 180px; 
+    overflow-y: auto; 
+    padding-right: 5px;
+}
+.review-text::-webkit-scrollbar {
+    width: 5px;
+}
+.review-text::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.review-text::-webkit-scrollbar-thumb {
+    background: #1e293b; 
+    border-radius: 10px;
+}
+.review-text::-webkit-scrollbar-thumb:hover {
+    background: #e5494d;
 }
 .client-name {
     color: white;
