@@ -367,6 +367,7 @@ hr {
     transition: 0.3s;
     display: inline-block;
     text-decoration: none; 
+    cursor: pointer;
 }
 .ach-item:hover {
     border-color: #e5494d;
