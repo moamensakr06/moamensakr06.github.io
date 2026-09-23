@@ -3,7 +3,6 @@
 Welcome to my personal portfolio repository! This is a fully responsive website built from scratch to showcase my background, skills, and practical projects as a Network and Cybersecurity Engineer.
 
 ## 🚀 Live Demo
-*(You can add your GitHub Pages link here later)*
 
 ## 🛠️ Technologies Used
 * **HTML5:** Semantic structuring of the content.
